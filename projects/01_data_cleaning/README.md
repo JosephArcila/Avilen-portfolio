@@ -6,7 +6,17 @@ This repository contains three data cleaning projects completed at AVILEN, demon
 ## Projects
 
 ### 1. Container Freight Charges (`01_container_freight_cleaning.ipynb`)
-Processed container freight charge data from PDF format into structured, analyzable data:
+Processed container freight charge data from PDF format into structured, analyzable data.
+
+#### Input Format
+![Raw PDF Format](data_structure_examples/container_freight/raw_pdf_format.png)
+*Original data in PDF format with complex table structures*
+
+#### Output Format
+![Processed Data](data_structure_examples/container_freight/processed_data.png)
+*Cleaned data in structured CSV format*
+
+#### Features:
 - **Input**: Complex PDF tables with merged cells and inconsistent formatting
 - **Challenges**: 
   - Extraction from PDF format
@@ -22,7 +32,17 @@ Processed container freight charge data from PDF format into structured, analyza
   - Multi-section data merging
 
 ### 2. Market Conditions (`02_market_conditions_cleaning.ipynb`)
-Consolidated market data from multiple countries into a unified format:
+Consolidated market data from multiple countries into a unified format.
+
+#### Input Format
+![Raw Excel Format](data_structure_examples/market_conditions/raw_excel_format.png)
+*Original multi-sheet Excel format with varied structures*
+
+#### Output Format
+![Processed Data](data_structure_examples/market_conditions/processed_data.png)
+*Unified market data in standardized format*
+
+#### Features:
 - **Input**: Multi-sheet Excel file with data from Brazil, Thailand, USA, and China
 - **Challenges**:
   - Multiple data formats per country
@@ -39,7 +59,17 @@ Consolidated market data from multiple countries into a unified format:
   - Time series alignment
 
 ### 3. Brazil Export Analysis (`03_brazil_export_cleaning.ipynb`)
-Transformed Brazilian export data into analyzable time series:
+Transformed Brazilian export data into analyzable time series.
+
+#### Input Format
+![Raw Excel Format](data_structure_examples/brazil_export/raw_excel_format.png)
+*Complex Excel structure with nested year data*
+
+#### Output Format
+![Processed Data](data_structure_examples/brazil_export/processed_data.png)
+*Clean time series data structure*
+
+#### Features:
 - **Input**: Complex Excel structure with nested year data
 - **Challenges**:
   - Split year handling
@@ -53,21 +83,6 @@ Transformed Brazilian export data into analyzable time series:
   - Year splitting and merging
   - Bilingual data handling
   - Time series restructuring
-
-## Data Structure Examples
-Visual documentation of the data transformation process is available in `data_structure_examples/`:
-
-### Container Freight 
-- `raw_pdf_format.png`: Original PDF table structure
-- `processed_data.png`: Clean, structured CSV output
-
-### Market Conditions
-- `raw_excel_format.png`: Original multi-sheet Excel format
-- `processed_data.png`: Unified market data structure
-
-### Brazil Export
-- `raw_excel_format.png`: Complex nested year format
-- `processed_data.png`: Clean time series structure
 
 ## Key Skills Demonstrated
 - PDF data extraction
