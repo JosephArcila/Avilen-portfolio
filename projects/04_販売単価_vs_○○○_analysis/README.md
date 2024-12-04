@@ -89,7 +89,7 @@ Key Insights:
 5. Relationship dynamics have evolved, showing more variability in recent years
 
 ### Shipping Volume Analysis
-![Shipping Volume Cross-Correlations](images/shipping_correlations.png)
+![Shipping Volume Cross-Correlations](shipping_correlations.png)
 *6-panel visualization showing cross-correlations between shipping volumes and inventory metrics (inventory levels, distribution volumes, inventory-distribution differences), both raw and detrended*
 
 The 3-month rolling average analysis demonstrated:
