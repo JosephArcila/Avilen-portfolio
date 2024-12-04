@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-As part of my work at AVILEN, I developed an analysis of market dynamics focusing on sales unit prices and shipping volumes. The project involved time series analysis using cross-correlation techniques to understand relationships between various market indicators.
+As part of my work at AVILEN, I developed a comprehensive analysis of market dynamics focusing on sales unit prices and shipping volumes. The project involved sophisticated time series analysis using cross-correlation techniques to understand relationships between various market indicators.
 
 ## Business Context
 
@@ -55,16 +55,42 @@ detrended = pd.Series(signal.detrend(df['value']))
 
 ## Key Findings
 
-### Sales Unit Price Analysis
-![Sales Price Correlations](link_to_image)
+### Sales Unit Price vs Consumer Prices Analysis
 
-Analysis revealed:
-1. Consumer Prices showed the strongest correlation with sales unit prices
-2. Significant lag effects were observed in inventory relationships
-3. Detrending revealed underlying patterns masked by long-term trends
+#### Raw Data Analysis (Lag 0)
+![Raw Correlation Analysis](raw_correlation.png)
+*Analysis of direct relationship between sales unit prices and consumer prices*
+
+The raw data visualization revealed:
+1. Period Distribution:
+   - Early Period (2012-2016): Clustered around consumer prices 90-110, sales prices 250-360K yen/ton
+   - Recent Period (2022-2024): Shifted to consumer prices 150-160, sales prices reaching 450K yen/ton
+2. Clear positive correlation throughout the entire period (2012-2024)
+3. Strong upward trend over time, indicating inflation in both metrics
+4. Year-based clustering visible through color progression (purple to yellow)
+
+#### Detrended Analysis (Lag 1)
+![Detrended Correlation Analysis](detrended_correlation.png)
+*Analysis of relationship after removing long-term trends, with 1-period lag*
+
+The detrended analysis showed:
+1. Maintained positive correlation even after trend removal
+2. Temporal Patterns:
+   - Earlier years (2012-2017): Predominantly negative detrended values
+   - Recent years (2022-2024): Higher volatility with both positive and negative deviations
+3. Lag-1 relationship suggests consumer price changes may be a leading indicator
+4. Increased volatility in recent period (2022-2024)
+
+Key Insights:
+1. Strong underlying inflation trend visible in raw data
+2. Robust relationship persists even after detrending
+3. Recent years (2022-2024) show both higher price levels and increased volatility
+4. Consumer prices appear to lead sales unit price changes
+5. Relationship dynamics have evolved, showing more variability in recent years
 
 ### Shipping Volume Analysis
-![Shipping Volume Analysis](link_to_image)
+![Shipping Volume Cross-Correlations](images/shipping_correlations.png)
+*6-panel visualization showing cross-correlations between shipping volumes and inventory metrics (inventory levels, distribution volumes, inventory-distribution differences), both raw and detrended*
 
 The 3-month rolling average analysis demonstrated:
 1. Strong relationships between shipping volumes and inventory levels
