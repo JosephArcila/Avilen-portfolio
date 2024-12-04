@@ -67,7 +67,7 @@ ax1.plot(df.loc[mask, '年月'].shift(-1), df.loc[mask, 'total_brazil'].shift(-1
          label='ブラジルの総輸出量（1ヶ月先）')
 ```
 
-![Total Export Analysis](images/total_exports.png)
+![Total Export Analysis](images/total_exports.png) 
 
 ## Technical Details
 
