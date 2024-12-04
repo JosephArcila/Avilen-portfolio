@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-As part of my work at AVILEN, I developed a comprehensive analysis of market dynamics focusing on sales unit prices and shipping volumes. The project involved sophisticated time series analysis using cross-correlation techniques to understand relationships between various market indicators.
+As part of my work at AVILEN, I developed an analysis of market dynamics focusing on sales unit prices and shipping volumes. The project involved time series analysis using cross-correlation techniques to understand relationships between various market indicators.
 
 ## Business Context
 
