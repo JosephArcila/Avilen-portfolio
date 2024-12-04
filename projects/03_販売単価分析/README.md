@@ -105,7 +105,7 @@ Successfully delivered:
 
 ## Repository Contents
 
-- `notebooks/販売単価_data_collection_cleaning.ipynb`: Data processing pipeline
+- `販売単価_data_collection_cleaning.ipynb`: Data processing pipeline
 - `images/task_overview.png`: Original task requirements
 - `README.md`: Project documentation
 
