@@ -169,6 +169,7 @@ features = [
 ]
 # MAPE: 2.04%
 ```
+![Feature Importance](feature_importance_final.png)
 
 ### Final Model Performance
 
