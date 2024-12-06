@@ -48,7 +48,7 @@ for country in countries:
 ```
 
 Example visualization for Philippines:
-![Philippines Export Analysis](images/philippines_analysis.png)
+![Philippines Export Analysis](philippines_analysis.png)
 
 ### Total Export Volume Comparison
 The second visualization provides a broader perspective comparing:
@@ -67,7 +67,7 @@ ax1.plot(df.loc[mask, '年月'].shift(-1), df.loc[mask, 'total_brazil'].shift(-1
          label='ブラジルの総輸出量（1ヶ月先）')
 ```
 
-![Total Export Analysis](images/total_exports.png) 
+![Total Export Analysis](total_exports.png) 
 
 ## Technical Details
 
